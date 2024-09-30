@@ -261,8 +261,6 @@ void english(){
 
 void portuguese(){
 
-    setlocale(LC_ALL, "Portuguese_Brazil.1252");
-
     int option;
     int continueClosing;
 
@@ -317,7 +315,7 @@ void portuguese(){
             if (system("tasklist | findstr steam.exe") != 1)
             {
                 printf("-------------------------------\n");
-                printf("Discord fechado com sucesso! \n");
+                printf("Steam fechada com sucesso! \n");
             }
             else
             {
@@ -443,7 +441,7 @@ void main(){
     {
 
         printf("------------------------------------------------------- \n");
-        printf("Digite abaixo a linguagem que voce deseja utilizar: \n");
+        printf("Digite abaixo a linguagem que você deseja utilizar: \n");
         printf("Select below the language that you wanna use: \n");
         printf("-------------------------------------------------------\n");
         printf("1           ->          Portuguese \n");
