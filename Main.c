@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <locale.h>
 #include <stdbool.h>
+#include <windows.h>
 
 void spotify(){
 
@@ -110,8 +111,10 @@ void english(){
 
         switch (option){
         case 0:
-
-            system("exit");
+            continueClosing = 0;
+            printf("Closing program...\n");
+            Sleep(3000);
+            exit(0);
 
         case 1:
             discord_en();
@@ -283,8 +286,10 @@ void portuguese(){
 
         switch (option){
         case 0:
-
-            system("exit");
+            continueClosing = 0;
+            printf("Fechando programa...\n");
+            Sleep(3000);
+            exit(0);
 
         case 1:
             discord();
